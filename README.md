@@ -29,11 +29,11 @@ Eventsim uses song data from [Million Songs Dataset](http://millionsongdataset.c
 
 ### Architecture
 
-![streamify-architecture](images/Streamify-Architecture.jpg)
+images/StreaArchitecture.jpg
 
 ### Final Result
 
-![dashboard](images/dashboard.png)
+images/dashboard.png
 ## Setup
 
 **WARNING: You will be charged for all the infra setup. You can avail 300$ in credit by creating a new account on GCP.**
