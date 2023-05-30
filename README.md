@@ -29,11 +29,11 @@ Eventsim uses song data from [Million Songs Dataset](http://millionsongdataset.c
 
 ### Architecture
 
-images/StreaArchitecture.jpg
+<img src="images/StreaArchitecture.jpg">
 
 ### Final Result
 
-images/dashboard.png
+<img src="images/dashboard.png">
 ## Setup
 
 **WARNING: You will be charged for all the infra setup. You can avail 300$ in credit by creating a new account on GCP.**
