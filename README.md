@@ -1,12 +1,29 @@
-# Streamify
+# Eventism Music | Modern Data Engineering Project
 
+## Introduction
+
+The goal of this project is to stream events generated from a fake music 
+streaming service (similar to Spotify) and create a data pipeline that consumes the real-time data. The data coming in would be similar to an event of a user listening to a song, navigating on the website, authenticating. The data would be processed in real-time and stored to the data lake periodically (every two minutes). The hourly batch job will then consume this data, apply transformations, and create the desired tables for our dashboard to generate analytics. 
+
+We will try to analyze metrics like popular songs, active users, user demographics etc.
 A data pipeline with Kafka, Spark Streaming, dbt, Docker, Airflow, Terraform, GCP and much more!
 
-## Description
+### Architecture
 
-### Objective
+<img src="images\Streamify-Architecture.jpg">
 
-The project will stream events generated from a fake music streaming service (like Spotify) and create a data pipeline that consumes the real-time data. The data coming in would be similar to an event of a user listening to a song, navigating on the website, authenticating. The data would be processed in real-time and stored to the data lake periodically (every two minutes). The hourly batch job will then consume this data, apply transformations, and create the desired tables for our dashboard to generate analytics. We will try to analyze metrics like popular songs, active users, user demographics etc.
+## Technology Used
+- Programming Language - Python
+- Google Cloud Platform (GCP)
+1. Google Storage
+2. BigQuery
+3. Looker Studio
+- Apache Kafka
+- Terraform (IAAS)
+- Docker
+- Apache Spark
+- Apache Airflow (Orchestration)
+- dbt (Transformation)
 
 ### Dataset
 
@@ -14,26 +31,12 @@ The project will stream events generated from a fake music streaming service (li
 
 Eventsim uses song data from [Million Songs Dataset](http://millionsongdataset.com) to generate events. I have used a [subset](http://millionsongdataset.com/pages/getting-dataset/#subset) of 10000 songs.
 
-### Tools & Technologies
+## Data Model
 
-- Cloud - [**Google Cloud Platform**](https://cloud.google.com)
-- Infrastructure as Code software - [**Terraform**](https://www.terraform.io)
-- Containerization - [**Docker**](https://www.docker.com), [**Docker Compose**](https://docs.docker.com/compose/)
-- Stream Processing - [**Kafka**](https://kafka.apache.org), [**Spark Streaming**](https://spark.apache.org/docs/latest/streaming-programming-guide.html)
-- Orchestration - [**Airflow**](https://airflow.apache.org)
-- Transformation - [**dbt**](https://www.getdbt.com)
-- Data Lake - [**Google Cloud Storage**](https://cloud.google.com/storage)
-- Data Warehouse - [**BigQuery**](https://cloud.google.com/bigquery)
-- Data Visualization - [**Data Studio**](https://datastudio.google.com/overview)
-- Language - [**Python**](https://www.python.org)
-
-### Architecture
-
-<img src="images\Streamify-Architecture.jpg">
-
-### Final Result
-
+## Dashboard
 <img src="images\dashboard.png">
+
+
 ## Setup
 
 **WARNING: You will be charged for all the infra setup. You can avail 300$ in credit by creating a new account on GCP.**
