@@ -32,6 +32,7 @@ A data pipeline with Kafka, Spark Streaming, dbt, Docker, Airflow, Terraform, GC
 Eventsim uses song data from [Million Songs Dataset](http://millionsongdataset.com) to generate events. I have used a [subset](http://millionsongdataset.com/pages/getting-dataset/#subset) of 10000 songs.
 
 ## Data Model
+<img src="images\data_model.png">
 
 ## Dashboard
 <img src="images\dashboard.png">
